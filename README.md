@@ -65,7 +65,7 @@ kubectl version --client
 Open **PowerShell or Command Prompt** as Administrator:
 
 ```powershell
-minikube start
+minikube start --driver=docker --image-repository="registry.aliyuncs.com/google_containers"
 ```
 
 * This will start a local Kubernetes cluster using the default VM driver (Hyper-V or Docker driver).
